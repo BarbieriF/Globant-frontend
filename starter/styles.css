@@ -2,27 +2,25 @@ body,
 html {
   font-family: "Inter", sans-serif;
 }
-header {
-  background-color: #ff3b3c;
-  border: 1px solid red;
-  height: 152px;
+header {  
+  background-color: #ff3b3c;  
+  height: 152px; 
+  padding: 20px;
 }
-section {
-  border: 1px solid purple;
-  height: 340px;
+section {  
+  height: 340px;  
 }
-main {
-  border: 1px solid blue;
+main { 
   height: auto;
 }
-footer {
-  border: 1px solid #009145;
+footer {    
   height: 368px;
+  background-color: #7525A7;
+  margin-top: 30px;
 }
 .container {
   width: 1220px;
-  margin: 0 auto;
-  border: 1px solid springgreen;
+  margin: 0 auto;  
   height: inherit;
   min-height: inherit;
   display: flex;
@@ -42,6 +40,7 @@ footer {
   background-color: #f0f0f0;
   border-radius: 14px;
   width: auto;
+  overflow: hidden;
 }
 .product-info {
   padding: 20px;
@@ -80,11 +79,11 @@ footer {
   font-size: 11px;
   font-weight: 300;
 }
-section#hero{
-  border: 1px solid purple;
+section#hero{  
   height: 340px;
   background: url(assets/hero_bg.png);  
   background-size: cover;  
+  margin-bottom: 30px;
 }
 section#hero .container{
     display: flex;
@@ -110,11 +109,13 @@ section#hero .container{
   align-items: center;
   display: grid;
   grid-template-columns: repeat(3,1fr);
+  padding: 20px;
 }
 .search .form{
   box-sizing: border-box;
   display: flex;
   justify-content: center;
+  margin-top: 20px;
 }
 .search .form input{
   height: 62px;
@@ -153,3 +154,61 @@ section#hero .container{
 nav ul li a:hover{
   text-decoration: underline;
 }
+
+footer .container{
+  display: flex;
+  flex-direction: column;
+}
+
+.columns-container{
+  flex: 1;
+  display: flex;   
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.columns-container .col ul{
+  list-style-type: none;
+  padding: 0;
+}
+
+.columns-container .col ul li{
+  padding: 5px 0;
+}
+
+.columns-container .col ul li .col-main-item{
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+
+.columns-container .col ul li a{
+  text-decoration: none;
+  color: white;
+}
+
+.copyright {
+  border-top: 1px solid #ba53fb;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  padding: 30px 0;
+  box-sizing: border-box;
+}
+
+main .container{
+  display: flex;
+  flex-direction: column;
+}
+.product-img-block,
+.product-description-block,
+.product-checkout-block{
+  flex: 1;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.sales-block {
+  width: 100%;
+  box-sizing: border-box; 
+}
+
